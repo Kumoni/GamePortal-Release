@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #9900FF;      /* Яркий фиолетовый */
-    --primary-dark: #4A0080;       /* Тёмно-фиолетовый */
-    --primary-light: #B14AFF;      /* Светло-фиолетовый */
-    --primary-glow: #CC66FF;       /* Светящийся фиолетовый */
-    --dark-bg: #0A0A0F;           /* Глубокий чёрный */
-    --darker-bg: #050507;         /* Очень тёмный */
-    --light-text: #E6E6E6;        /* Светлый текст */
+    --primary-color: #9900FF;     
+    --primary-dark: #4A0080;      
+    --primary-light: #B14AFF;   
+    --primary-glow: #CC66FF;      
+    --dark-bg: #0A0A0F;         
+    --darker-bg: #050507;        
+    --light-text: #E6E6E6;       
     --purple-gradient: linear-gradient(135deg, #4A0080 0%, #9900FF 100%);
     --purple-glow: 0 0 20px rgba(153, 0, 255, 0.3);
 }
@@ -592,17 +592,14 @@ body {
     background: linear-gradient(135deg, rgba(139, 0, 255, 0.1) 0%, rgba(139, 0, 255, 0.05) 100%);
 }
 
-/* Стили для карточек */
 .card-body {
     color: var(--light-text);
 }
 
-/* Стили для текста в таблицах */
 .table a {
     color: var(--primary-light);
 }
 
-/* Стили для выпадающего меню */
 .dropdown-menu {
     position: absolute !important;
     z-index: 1000;
@@ -615,12 +612,10 @@ body {
     padding: 0.5rem;
 }
 
-/* Исправление позиционирования контейнера выпадающего меню */
 .navbar-nav .nav-item.dropdown {
     position: relative;
 }
 
-/* Стили для элементов выпадающего меню */
 .dropdown-item {
     color: var(--light-text) !important;
     padding: 0.75rem 1rem;
@@ -640,7 +635,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Анимация появления выпадающего меню */
 .dropdown-menu.show {
     animation: dropdownFade 0.2s ease-in-out;
 }
@@ -656,19 +650,19 @@ body {
     }
 }
 
-/* Исправление z-index для контейнера */
+
 .container-fluid {
     position: relative;
     z-index: 1;
 }
 
-/* Убедимся, что навигация всегда поверх остального контента */
+
 .navbar {
     position: relative;
     z-index: 1000;
 }
 
-/* Стили для форм */
+
 .form-control:focus {
     background-color: var(--darker-bg);
     color: var(--light-text);
@@ -680,24 +674,24 @@ body {
     color: var(--light-text);
 }
 
-/* Стили для заголовков */
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--light-text);
 }
 
-/* Стили для модальных окон */
+
 .modal-content {
     background-color: var(--darker-bg);
     color: var(--light-text);
 }
 
-/* Стили для placeholder в полях ввода */
+
 ::placeholder {
     color: var(--light-text) !important;
     opacity: 0.5;
 }
 
-/* Стили для текста в навигации */
+
 .nav-link {
     color: var(--light-text) !important;
 }
@@ -706,65 +700,60 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-light) !important;
 }
 
-/* Стили для пагинации */
 .pagination .page-link {
     background-color: var(--darker-bg);
     border-color: var(--primary-dark);
     color: var(--light-text);
 }
 
-/* Стили для бейджей */
+
 .badge {
     color: var(--light-text);
 }
 
-/* Стили для предупреждений и сообщений */
+
 .alert {
     background-color: var(--darker-bg);
     border-color: var(--primary-dark);
     color: var(--light-text);
 }
 
-/* Стили для списков */
+
 .list-group-item {
     background-color: var(--darker-bg);
     border-color: var(--primary-dark);
     color: var(--light-text);
 }
 
-/* Исправление цвета текста в сортировке */
 .text-dark {
     color: var (--light-text) !important;
 }
 
-/* Текст в таблицах сортировки */
 th a {
     color: var(--primary-light) !important;
 }
 
-/* Мутированный текст */
 .text-muted {
     color: #9fadbd !important;
 }
 
-/* Описания и подзаголовки */
 .lead, .subtitle {
     color: var(--light-text);
 }
 
-/* Валидация форм */
+
 .validation-summary-errors,
 .field-validation-error {
     color: #ff6b6b !important;
 }
 
-/* Бейджи и метки */
+
 .badge {
     background-color: var(--primary-dark);
     color: var(--light-text);
 }
 
-/* Хлебные крошки */
+
 .breadcrumb {
     background-color: var(--darker-bg);
     color: var(--light-text);
@@ -774,7 +763,7 @@ th a {
     color: var(--primary-light);
 }
 
-/* Специальные эффекты */
+
 .hero-section {
     background: linear-gradient(135deg, rgba(10, 10, 15, 0.9) 0%, rgba(26, 0, 43, 0.9) 100%);
     box-shadow: 0 4px 25px rgba(139, 0, 255, 0.15);
@@ -802,7 +791,7 @@ th a {
     animation: glow 2s infinite;
 }
 
-/* Стили для административных таблиц */
+
 .table thead th a,
 .table thead th span {
     color: var(--light-text) !important;
@@ -813,30 +802,30 @@ th a {
     color: var(--light-text) !important;
 }
 
-/* Стили для ссылок сортировки в заголовках таблиц */
+
 th a.text-decoration-none {
     color: var(--light-text) !important;
 }
 
-/* Стили для текста в карточках управления */
+
 .card-header h2,
 .card-header h3,
 .card-header h4 {
     color: var(--light-text) !important;
 }
 
-/* Стили для всего текста в административных разделах */
+
 .container-fluid,
 .container-fluid * {
     color: var(--light-text);
 }
 
-/* Стили для текста в формах поиска */
+
 .input-group input::placeholder {
     color: rgba(230, 230, 230, 0.5) !important;
 }
 
-/* Стили для кнопок в административных разделах */
+
 .btn-group .btn {
     color: var(--light-text);
 }
@@ -849,7 +838,7 @@ th a.text-decoration-none {
     color: #ff4d4d;
 }
 
-/* Стили для выпадающего меню в административных разделах */
+
 .dropdown-menu {
     background-color: var(--darker-bg) !important;
 }
@@ -863,7 +852,7 @@ th a.text-decoration-none {
     color: white !important;
 }
 
-/* Стили для форм в административных разделах */
+
 .form-control,
 .input-group-text {
     background-color: var(--darker-bg) !important;
@@ -876,50 +865,48 @@ th a.text-decoration-none {
     color: var (--light-text) !important;
 }
 
-/* Стили для текста в модальных окнах */
+
 .modal-content {
     background-color: var(--darker-bg) !important;
     color: var(--light-text) !important;
 }
 
-/* Стили для сообщений и уведомлений */
+
 .validation-summary-errors,
 .validation-summary-valid,
 .field-validation-error {
     color: var(--light-text) !important;
 }
 
-/* Стили для значков и меток */
+
 .badge,
 .label {
     color: var(--light-text) !important;
 }
 
-/* Стили для текста в панели навигации */
+
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-item {
     color: var(--light-text) !important;
 }
 
-/* Стили для иконок */
+
 .bi {
     color: inherit;
 }
 
-/* Исправление специфичных элементов в таблицах */
 [data-sort],
 [data-sort] * {
     color: var(--light-text) !important;
 }
 
-/* Принудительное применение светлого текста */
+
 .text-dark,
 .text-body,
 .text-black {
     color: var(--light-text) !important;
 }
 
-/* Стили для заголовков таблиц с сортировкой */
 .table th a.text-decoration-none.text-dark,
 .table th a.text-decoration-none.text-light {
     color: var(--light-text) !important;
@@ -932,12 +919,11 @@ th a.text-decoration-none {
     color: var(--light-text) !important;
 }
 
-/* Стили для кнопок действий */
+
 .btn-group .btn i {
     color: inherit !important;
 }
 
-/* Неоновые эффекты */
 .neon-text {
     text-shadow: 0 0 5px var(--primary-glow),
                  0 0 10px var(--primary-glow),
@@ -950,7 +936,6 @@ th a.text-decoration-none {
                 inset 0 0 10px var(--primary-color);
 }
 
-/* Шапка сайта */
 .site-header {
     background: linear-gradient(90deg, #1A002B 0%, #2D0045 100%);
     padding: 2rem 0;
@@ -986,7 +971,7 @@ th a.text-decoration-none {
     text-shadow: 0 0 10px var(--primary-glow);
 }
 
-/* Навигация */
+
 .navbar {
     background: rgba(10, 10, 15, 0.95);
     backdrop-filter: blur(10px);
@@ -1015,7 +1000,7 @@ th a.text-decoration-none {
     width: 100%;
 }
 
-/* Карточки */
+
 .card {
     background: linear-gradient(135deg, rgba(10, 10, 15, 0.9) 0%, rgba(26, 0, 43, 0.9) 100%);
     border: 1px solid var(--primary-dark);
@@ -1034,7 +1019,7 @@ th a.text-decoration-none {
     padding: 1.5rem;
 }
 
-/* Кнопки */
+
 .btn {
     position: relative;
     overflow: hidden;
@@ -1070,7 +1055,6 @@ th a.text-decoration-none {
     box-shadow: 0 6px 20px rgba(153, 0, 255, 0.4);
 }
 
-/* Таблицы */
 .table {
     background: rgba(10, 10, 15, 0.7);
     border-radius: 10px;
@@ -1092,8 +1076,6 @@ th a.text-decoration-none {
     background: rgba(153, 0, 255, 0.1);
     transform: scale(1.01);
 }
-
-/* Формы */
 .form-control {
     background: rgba(10, 10, 15, 0.8);
     border: 1px solid var(--primary-dark);
@@ -1107,7 +1089,6 @@ th a.text-decoration-none {
     box-shadow: 0 0 15px rgba(153, 0, 255, 0.2);
 }
 
-/* Анимации */
 @keyframes glow {
     from {
         text-shadow: 0 0 5px var(--primary-glow),
@@ -1127,7 +1108,6 @@ th a.text-decoration-none {
     100% { transform: translateY(0px); }
 }
 
-/* Особенности на главной */
 .feature-card {
     background: linear-gradient(135deg, rgba(10, 10, 15, 0.8) 0%, rgba(26, 0, 43, 0.8) 100%);
     border: 1px solid var(--primary-dark);
@@ -1147,7 +1127,6 @@ th a.text-decoration-none {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Красивый скроллбар */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -1165,7 +1144,6 @@ th a.text-decoration-none {
     background: var(--primary-color);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .game-title {
         font-size: 2rem;
@@ -1185,12 +1163,10 @@ th a.text-decoration-none {
     }
 }
 
-/* Дополнительные эффекты для интерактивных элементов */
 .btn, .nav-link, .feature-card, .card {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Улучшенные стили для форм */
 .input-group {
     position: relative;
 }
@@ -1201,7 +1177,6 @@ th a.text-decoration-none {
     color: var(--primary-light);
 }
 
-/* Стили для компонентов управления */
 .admin-controls {
     background: rgba(10, 10, 15, 0.9);
     border-radius: 10px;
@@ -1209,7 +1184,6 @@ th a.text-decoration-none {
     margin-bottom: 1rem;
 }
 
-/* Улучшенные стили для уведомлений */
 .alert {
     background: linear-gradient(135deg, rgba(10, 10, 15, 0.9) 0%, rgba(26, 0, 43, 0.9) 100%);
     border: 1px solid var(--primary-dark);
