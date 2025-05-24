@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="container">
+    <!-- Hero секция -->
+    <div class="hero-section text-center mb-5">
+        <h1 class="display-4 mb-4">Добро пожаловать в мир приключений</h1>
+        <p class="lead mb-4">Создавайте уникальных героев, исследуйте загадочные миры и станьте легендой</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-controller="Characters" asp-action="Index" class="btn btn-primary btn-lg">
+                <i class="bi bi-play-fill"></i> Начать игру
+            </a>
+            <a asp-controller="Home" asp-action="About" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-info-circle"></i> Узнать больше
+            </a>
+        </div>
+    </div>
+
+    <!-- Особенности -->
+    <div class="features-section mb-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="bi bi-person-badge feature-icon"></i>
+                    <h3>Персонажи</h3>
+                    <p>Создавайте и развивайте уникальных героев с разными способностями</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="bi bi-map feature-icon"></i>
+                    <h3>Миры</h3>
+                    <p>Исследуйте различные локации с уникальными испытаниями</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="bi bi-trophy feature-icon"></i>
+                    <h3>Достижения</h3>
+                    <p>Получайте награды за выполнение особых заданий</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="bi bi-people feature-icon"></i>
+                    <h3>Сообщество</h3>
+                    <p>Присоединяйтесь к растущему сообществу игроков</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Последние обновления -->
+    <div class="updates-section mb-5">
+        <h2 class="section-title text-center mb-4">Последние обновления</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card update-card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-star-fill"></i>
+                            Новый уровень
+                        </h5>
+                        <p class="card-text">Исследуйте таинственный замок с новыми испытаниями</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card update-card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-lightning-fill"></i>
+                            Новые способности
+                        </h5>
+                        <p class="card-text">Откройте новые уникальные умения для своих персонажей</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card update-card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-gift-fill"></i>
+                            Бонусные награды
+                        </h5>
+                        <p class="card-text">Получите дополнительные награды за достижения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-section {
+        padding: 5rem 0;
+        background: linear-gradient(135deg, rgba(139, 0, 255, 0.1) 0%, rgba(139, 0, 255, 0.05) 100%);
+        border-radius: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .feature-card {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(139, 0, 255, 0.05);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(139, 0, 255, 0.1);
+        }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .section-title {
+        color: var(--primary-light);
+        margin-bottom: 2rem;
+    }
+
+    .update-card {
+        background: rgba(26, 26, 46, 0.8);
+        border: 1px solid var(--primary-dark);
+        transition: all 0.3s ease;
+    }
+
+        .update-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+    .card-title {
+        color: var(--primary-light);
+    }
+
+        .card-title i {
+            margin-right: 0.5rem;
+        }
+</style>

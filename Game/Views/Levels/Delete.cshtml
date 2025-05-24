@@ -1,0 +1,16 @@
+@model Game.Models.Level
+
+@{
+    ViewData["Title"] = "Удалить уровень";
+}
+
+<h2>Удалить уровень</h2>
+<div>
+    <h4>@Model.Name</h4>
+    <p>Сложность: @Model.Difficulty</p>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Удалить</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>

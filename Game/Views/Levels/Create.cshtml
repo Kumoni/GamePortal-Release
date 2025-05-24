@@ -1,0 +1,21 @@
+@model Game.Models.Level
+
+@{
+    ViewData["Title"] = "Создать уровень";
+}
+
+<h2>Создать уровень</h2>
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Difficulty" class="form-label"></label>
+        <input asp-for="Difficulty" class="form-control" />
+        <span asp-validation-for="Difficulty" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Создать</button>
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>

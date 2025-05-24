@@ -1,0 +1,30 @@
+@model Game.Models.Character
+@{
+    ViewData["Title"] = "Редактировать персонажа";
+}
+<h2>Редактировать персонажа</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Class" class="form-label"></label>
+        <input asp-for="Class" class="form-control" />
+        <span asp-validation-for="Class" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="LevelId" class="form-label"></label>
+        <select asp-for="LevelId" class="form-control" asp-items="ViewBag.Levels"></select>
+        <span asp-validation-for="LevelId" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PlayerId" class="form-label"></label>
+        <select asp-for="PlayerId" class="form-control" asp-items="ViewBag.Players"></select>
+        <span asp-validation-for="PlayerId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>

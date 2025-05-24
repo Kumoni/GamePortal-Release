@@ -1,0 +1,14 @@
+@model Game.Models.Player
+@{
+    ViewData["Title"] = "Удалить игрока";
+}
+<h2>Удалить игрока</h2>
+<div>
+    <h4>@Model.Name</h4>
+    <p>Дата регистрации: @Model.RegistrationDate.ToShortDateString()</p>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Удалить</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>
